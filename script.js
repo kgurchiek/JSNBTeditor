@@ -19,7 +19,7 @@ Array.prototype.forEach.call(
       const filenameList = Array.prototype.map.call(hiddenInput.files, function(
         file
       ) {
-        return file.item();
+        return file.name;
       });
 
       label.textContent = filenameList.join(", ") || defaultLabelText;
